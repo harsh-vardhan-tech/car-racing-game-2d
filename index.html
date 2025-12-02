@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Car Racing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <h1>🏎️ Car Racing Game</h1>
+            <div class="score-display">
+                <span>Score: </span><span id="score">0</span>
+            </div>
+        </header>
+        <div class="canvas-wrapper">
+            <canvas id="gameCanvas" width="800" height="600"></canvas>
+            <div id="gameOverlay" class="overlay hidden">
+                <div class="overlay-content">
+                    <h2 id="overlayTitle">Game Over</h2>
+                    <p>Final Score: <span id="finalScore">0</span></p>
+                    <button id="restartBtn" class="btn">Play Again</button>
+                </div>
+            </div>
+            <div id="startOverlay" class="overlay">
+                <div class="overlay-content">
+                    <h2>🏁 Ready to Race!</h2>
+                    <p>Use Arrow Keys to control your car</p>
+                    <p>⬆️ Accelerate | ⬇️ Brake | ⬅️➡️ Steer</p>
+                    <button id="startBtn" class="btn">Start Game</button>
+                </div>
+            </div>
+        </div>
+        <footer class="game-footer">
+            <p>Use Arrow Keys to control your car. Avoid other cars!</p>
+        </footer>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
